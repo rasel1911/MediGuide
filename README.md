@@ -5,8 +5,8 @@ The medicine suggestions are driven by a robust decision-making system that refe
 
 Key Features:
 
-Patient Data Collection: Securely collects patient details, including symptoms, medical history, and relevant health parameters.
-Medicine Recommendation Engine: Recommends medicines based on patient information, utilizing a JSON-based medicine database.
-User-Friendly Interface: A clean, intuitive interface that allows both patients and healthcare providers to navigate with ease.
-Scalable Framework: Built on Python Flask, making the project highly scalable and adaptable to future integrations.
+1. Patient Data Collection: Securely collects patient details, including symptoms, medical history, and relevant health parameters.
+2. Medicine Recommendation Engine: Recommends medicines based on patient information, utilizing a JSON-based medicine database.
+3. User-Friendly Interface: A clean, intuitive interface that allows both patients and healthcare providers to navigate with ease.
+4. Scalable Framework: Built on Python Flask, making the project highly scalable and adaptable to future integrations.
 
