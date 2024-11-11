@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatment Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .result-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .treatment-details {
+            margin-top: 20px;
+        }
+
+        .treatment-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Treatment for {{ disease }}</h1>
+
+    <div class="result-container">
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Age:</strong> {{ age }}</p>
+
+        {% if treatment != "No treatment found for this disease." %}
+        <div class="treatment-details">
+            <p><strong>Treatment Description:</strong> {{ treatment['description'] }}</p>
+            <p><strong>Medications:</strong> {{ ', '.join(treatment['medications']) }}</p>
+            <p><strong>Home Remedies:</strong> {{ ', '.join(treatment['home_remedies']) }}</p>
+        </div>
+        {% else %}
+        <p>{{ treatment }}</p>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>

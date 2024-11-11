@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Robot - Disease Treatment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select,
+        input[type="text"],
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+    <script>
+        function toggleForm() {
+            const diseaseSelect = document.getElementById('diseaseSelect');
+            const diseaseForm = document.getElementById('diseaseForm');
+            const imageForm = document.getElementById('imageForm');
+
+            if (diseaseSelect.value === 'disease') {
+                diseaseForm.style.display = 'block';
+                imageForm.style.display = 'none';
+            } else if (diseaseSelect.value === 'image') {
+                diseaseForm.style.display = 'none';
+                imageForm.style.display = 'block';
+            } else {
+                diseaseForm.style.display = 'none';
+                imageForm.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Dr. Robot - Disease Treatment</h1>
+    <div class="form-container">
+        <label for="diseaseSelect">Select Treatment Type:</label>
+        <select id="diseaseSelect" name="treatmentType" onchange="toggleForm()">
+            <option value="">--Select detection type--</option>
+            <option value="disease">Disease Treatment</option>
+            <option value="image">Image Disease Detection</option>
+        </select>
+
+        <div id="diseaseForm" style="display:none;">
+            <form action="http://localhost:5000/submit" method="POST">
+                <h2 class="form-title">Disease Treatment Form</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="disease">Disease:</label>
+                    <select id="disease" name="disease">
+                      <option value="common cold">Common Cold</option>
+                      <option value="flu">Flu (Influenza)</option>
+                      <option value="diabetes">Diabetes (Type 2)</option>
+                      <option value="hypertension">Hypertension (High Blood Pressure)</option>
+                      <option value="asthma">Asthma</option>
+                      <option value="pneumonia">Pneumonia</option>
+                      <option value="covid-19">COVID-19</option>
+                      <option value="migraine">Migraine</option>
+                      <option value="acid reflux">Acid Reflux (GERD)</option>
+                      <option value="eczema">Eczema</option>
+                      <option value="back pain">Back Pain</option>
+                      <option value="arthritis">Arthritis</option>
+                      <option value="chickenpox">Chickenpox</option>
+                      <option value="urinary tract infection">Urinary Tract Infection (UTI)</option>
+                    </select>
+
+
+                <label for="days">Days of Disease:</label>
+                <input type="number" id="days" name="days" required>
+
+                <input type="submit" value="Get Treatment">
+            </form>
+        </div>
+
+        <div id="imageForm" style="display:none;">
+            <form action="http://localhost:5000/upload" method="POST" enctype="multipart/form-data">
+                <h2 class="form-title">Image Disease Detection Form</h2>
+                <label for="nameImage">Name:</label>
+                <input type="text" id="nameImage" name="name" required>
+
+                <label for="ageImage">Age:</label>
+                <input type="number" id="ageImage" name="age" required>
+
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <input type="submit" value="Detect Disease">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

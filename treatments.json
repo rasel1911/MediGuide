@@ -1,0 +1,152 @@
+{
+  "diseases": [
+    {
+      "disease": "Common Cold",
+      "min_days": 1,
+      "max_days": 30,
+      "treatment": {
+        "description": "Rest, hydration, and over-the-counter medications such as antihistamines or decongestants.",
+        "medications": ["Antihistamines", "Decongestants", "Pain relievers"],
+        "home_remedies": ["Rest", "Drink plenty of fluids", "Use a humidifier", "Gargle with salt water"]
+      }
+    },
+    {
+      "disease": "Flu",
+      "min_days": 1,
+      "max_days": 20,
+      "treatment": {
+        "description": "Antiviral medications can be prescribed. Rest, fluids, and fever reducers are recommended.",
+        "medications": ["Oseltamivir (Tamiflu)", "Ibuprofen", "Acetaminophen"],
+        "home_remedies": ["Rest", "Stay hydrated", "Drink warm fluids like broth", "Use steam inhalation"]
+      }
+    },
+    {
+      "disease": "Flu",
+      "min_days": 20,
+      "max_days": 365,
+      "treatment": {
+      "description": "Consult to a Doctor"
+      }
+    },
+    {
+      "disease": "Diabetes",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Management with diet, exercise, oral medications, or insulin injections depending on the severity.",
+        "medications": ["Metformin", "Sulfonylureas", "Insulin"],
+        "home_remedies": ["Healthy diet (low sugar/carbs)", "Exercise regularly", "Monitor blood sugar", "Stay hydrated"]
+      }
+    },
+    {
+      "disease": "Hypertension",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Lifestyle changes, medications like ACE inhibitors, and regular monitoring of blood pressure.",
+        "medications": ["Lisinopril", "Amlodipine", "Losartan"],
+        "home_remedies": ["Reduce salt intake", "Exercise regularly", "Maintain a healthy weight", "Limit alcohol"]
+      }
+    },
+    {
+      "disease": "Asthma",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Use of rescue inhalers, long-term asthma control medications, and avoidance of triggers.",
+        "medications": ["Albuterol inhaler", "Corticosteroids", "Montelukast"],
+        "home_remedies": ["Use a humidifier", "Avoid smoking or exposure to smoke", "Practice breathing exercises"]
+      }
+    },
+    {
+      "disease": "Pneumonia",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Antibiotics for bacterial pneumonia, cough suppressants, and rest.",
+        "medications": ["Amoxicillin", "Azithromycin", "Pain relievers"],
+        "home_remedies": ["Stay hydrated", "Rest", "Use a humidifier", "Avoid smoking or polluted air"]
+      }
+    },
+    {
+      "disease": "COVID-19",
+      "min_days": 1,
+      "max_days": 36,
+      "treatment": {
+        "description": "Isolation, hydration, rest, and symptom management. Hospitalization for severe cases.",
+        "medications": ["Paracetamol for fever", "Corticosteroids in severe cases", "Antiviral medications like Remdesivir"],
+        "home_remedies": ["Rest", "Stay hydrated", "Monitor oxygen levels", "Take vitamin D and C supplements"]
+      }
+    },
+    {
+      "disease": "Migraine",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Pain relievers, triptans, and preventive medications. Rest in a dark, quiet room.",
+        "medications": ["Ibuprofen", "Sumatriptan", "Amitriptyline (for prevention)"],
+        "home_remedies": ["Rest in a quiet, dark room", "Apply a cold or hot compress to your head or neck", "Stay hydrated"]
+      }
+    },
+    {
+      "disease": "Acid Reflux",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Antacids, proton pump inhibitors, and lifestyle changes like avoiding trigger foods.",
+        "medications": ["Omeprazole", "Ranitidine", "Antacids like Tums"],
+        "home_remedies": ["Avoid spicy foods", "Eat smaller meals", "Stay upright after eating", "Limit alcohol and caffeine"]
+      }
+    },
+    {
+      "disease": "Eczema",
+      "min_days": 7,
+      "max_days": 365,
+      "treatment": {
+        "description": "Topical corticosteroids, moisturizers, and avoiding irritants.",
+        "medications": ["Hydrocortisone cream", "Tacrolimus", "Antihistamines for itching"],
+        "home_remedies": ["Use gentle, unscented moisturizers", "Avoid hot showers", "Wear soft clothing", "Use a humidifier"]
+      }
+    },
+    {
+      "disease": "Back Pain",
+      "min_days": 3,
+      "max_days": 21,
+      "treatment": {
+        "description": "Pain relievers, physical therapy, and stretching exercises.",
+        "medications": ["Ibuprofen", "Muscle relaxants", "Topical analgesics"],
+        "home_remedies": ["Apply heat or cold packs", "Gentle stretching exercises", "Maintain good posture", "Rest when necessary"]
+      }
+    },
+    {
+      "disease": "Arthritis",
+      "min_days": 1,
+      "max_days": 365,
+      "treatment": {
+        "description": "Pain relievers, anti-inflammatory medications, and physical therapy.",
+        "medications": ["Ibuprofen", "Naproxen", "Corticosteroids"],
+        "home_remedies": ["Low-impact exercises like swimming", "Apply heat/cold packs", "Maintain a healthy weight"]
+      }
+    },
+    {
+      "disease": "Chickenpox",
+      "min_days": 7,
+      "max_days": 14,
+      "treatment": {
+        "description": "Rest, antiviral medication, and use of lotions or antihistamines to reduce itching.",
+        "medications": ["Acyclovir (antiviral)", "Calamine lotion", "Antihistamines"],
+        "home_remedies": ["Oatmeal baths", "Wear loose clothing", "Stay hydrated", "Avoid scratching the blisters"]
+      }
+    },
+    {
+      "disease": "Urinary Tract Infection",
+      "min_days": 3,
+      "max_days": 30,
+      "treatment": {
+        "description": "Antibiotics, increased fluid intake, and pain relievers.",
+        "medications": ["Trimethoprim", "Ciprofloxacin", "Ibuprofen"],
+        "home_remedies": ["Drink plenty of water", "Use heating pads for discomfort", "Avoid caffeine and alcohol"]
+      }
+    }
+  ]
+}
