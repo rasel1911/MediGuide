@@ -10,3 +10,6 @@ Key Features:
 3. User-Friendly Interface: A clean, intuitive interface that allows both patients and healthcare providers to navigate with ease.
 4. Scalable Framework: Built on Python Flask, making the project highly scalable and adaptable to future integrations.
 
+![image](https://github.com/user-attachments/assets/da5bc894-01d2-4e7f-8fb6-fbf0008f2009)
+![image](https://github.com/user-attachments/assets/0d3ccded-cd2b-453c-852b-5bdadb2f64c8)
+
